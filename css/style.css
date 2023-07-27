@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* HEADER */
+
+.p-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4442423f;
+  height: 65px;
+  width: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 999; 
+}
+
+.ph-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  font-size: 45px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scale(0);
+}
+
+.logo:hover::after {
+  transform: scale(1);
+
+}
+
+.logo:hover {
+  transition: 1s;
+  transform: scale(1.2);
+  color: antiquewhite;
+}
+
+li {
+  padding: 10px;
+  list-style: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+li:hover {
+  transform: scale(1.2);
+  transition: 1s;
+  border-color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: antiquewhite;
+}
+
+.ph-btn {
+  width: 20vh;
+}
+
+.ph-input {
+  width: 40vh;
+}
+
+.zoe-backimg {
+  background-image: url(../multimedia/zoe-footer.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65vh; /* Use 100vh to cover the entire viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 65vh; /* Add padding to the top of <main> to push its content below the image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LOGIN */
+
+.body-index {
+  background-image: url(../multimedia/zoe-footer-2.jpg);
+  background-position: center center;
+  background-repeat:space;
+  background-size: cover; /* Set background-size to cover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: #504e4e;
+    border: 1px solid;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 115px;
+    
+}
+
+.zoe {
+    border-color: black;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+div {
+    padding: 20px;
+} 
+
+label {
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #504e4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50vh;
+    margin: o auto;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+/* FINISH LOG IN */
+
+/* CARRITO DE COMPRAS */
+
+.container.content-section {
+  text-align: center;
+}
+
+.section-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.shop-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.shop-item {
+  flex: 0 1 calc(33.33% - 30px);
+  margin: 15px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.shop-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shop-item-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.shop-item-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.shop-item-price {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.shop-item-button {
+  background-color: #2D9CDB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.shop-item-button:hover {
+  background-color: #56CCF2;
+}
+
+.cart-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.cart-column {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.cart-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.cart-price {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.cart-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.cart-quantity-input {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.btn-danger {
+  background-color: #EB5757;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.cart-total-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cart-total-price {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+  background-color: #2D9CDB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-purchase:hover {
+  background-color: #56CCF2;
+}
+
+/* FINISH CARRITO DE COMPRAS */
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #504e4e;
+  color: white;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+}
