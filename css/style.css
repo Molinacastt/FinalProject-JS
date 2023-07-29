@@ -387,6 +387,7 @@ footer {
   padding: 20px;
   bottom: 0;
   left: 0;
+  height: 400px;
 }
 
 footer h1 {
@@ -459,16 +460,6 @@ hr {
 .contact p {
   font-size: 12px;
 }
-
-
-/* .btn-contact {
-  display: flex;
-  align-items: center;
-  background-color: black;
-  color: white;
-  border-radius: 3px;
-  margin: 3px;
-} */
 
 .btn-contact p {
   background-color: black;
