@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ysabeau:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pacifico&family=Ysabeau:wght@300&display=swap');
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -40,7 +40,7 @@
   height: 4px;
   width: 100%;
   left: 0;
-  background-color: black;
+  background-color: rgb(11, 11, 11);
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   transform: scale(0);
@@ -48,7 +48,6 @@
 
 .logo:hover::after {
   transform: scale(1);
-
 }
 
 .logo:hover {
@@ -89,35 +88,19 @@ a:hover {
 }
 
 .zoe-backimg {
-  background-image: url(../multimedia/zoe-footer.jpg);
-  background-position: center center;
+  background-image: url(../multimedia/zoe-backimg.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  background-attachment: fixed;
+  /* position: absolute; */
   top: 0;
   left: 0;
   width: 100%;
-  height: 65vh; /* Use 100vh to cover the entire viewport height */
+  height: 75vh; /* Use 100vh to cover the entire viewport height */
   margin: 0;
   padding: 0;
 }
-
-main {
-  padding-top: 65vh; /* Add padding to the top of <main> to push its content below the image */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* LOGIN */
 
@@ -132,16 +115,36 @@ main {
   height: 100vh;
 }
 
+.index-login {
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    border-color: #504e4e;
+    /* border: 1px solid; */
+    margin-top: 80px;
+
+}
+
 .login {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 300px;
     width: 700px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.438);
     border-radius: 10px;
     border-color: #504e4e;
     border: 1px solid;
+    margin-top: 80px;
+}
+
+.a-login {
+  display: flex;
+  justify-content: space-around;
 }
 
 h1 {
@@ -168,7 +171,6 @@ form {
 .form-group {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 10px;
     margin-bottom: 15px;
 }
@@ -385,4 +387,97 @@ footer {
   padding: 20px;
   bottom: 0;
   left: 0;
+}
+
+footer h1 {
+  font-size: 300px;
+  text-decoration: underline;
+}
+
+footer h1:hover {
+  color: black;
+  transition: 0.5s;
+  font-size: 285px;
+}
+
+/* MAIN - CONTACTO */
+
+
+.c-main {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Ysabeau', sans-serif;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.btn-dropdown {
+  width: 300px;
+  padding-left: 20px;
+}
+
+.styled-dropdown {
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+hr {
+  height: 1px; 
+  border: none; 
+  background-color: #ccc;
+}
+
+.section-contact {
+  padding-top: 30px;
+  margin: 20px 85px;
+}
+
+.section-contact p {
+  font-size: 28px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact div h5 {
+  padding-bottom: 5px;
+}
+
+.contact p {
+  font-size: 12px;
+}
+
+
+/* .btn-contact {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  margin: 3px;
+} */
+
+.btn-contact p {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.btn-contact p:hover {
+  transition: 1s;
+  padding: 10px;
 }

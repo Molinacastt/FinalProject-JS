@@ -4,33 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="icon"
-      href="multimedia/zoe tab.jpg"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="multimedia/zoe tab.jpg" type="image/x-icon" />
     <title>Zoe</title>
   </head>
-  
-  <body class="body-index">
-    <section class="login">
-      <div class="zoe">
-        <h1>Zoe</h1>
-      </div>
-      <form class="form-group" id="form-group">
-        <div>
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
-        </div>
-        <div>
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </section>
 
-    <script src="js/main.js"></script>
+  <body class="body-index">
+
+    <div class="a-login">
+
+      <section class="index-login">
+        <div class="logo">
+          <h1>Zoe</h1>
+        </div>
+      </section>
+      
+      <form id="user-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <br />
+        <label for="phone">Phone:</label>
+        <input type="phone" id="phone" required />
+        <br />
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required />
+        <br />
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+
+    <script src="./js/form.js"></script>
   </body>
 </html>
