@@ -124,7 +124,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.527);
     border-radius: 10px;
     border-color: #504e4e;
-    /* border: 1px solid; */
+    border: 1px solid black;
     margin-top: 80px;
 
 }
@@ -145,6 +145,14 @@ a:hover {
 .a-login {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+
+.a-login form {
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 h1 {
@@ -382,7 +390,7 @@ button:hover {
 
 footer {
   width: 100%;
-  background-color: #504e4e;
+  background-color: #000000;
   color: white;
   padding: 20px;
   bottom: 0;
@@ -396,7 +404,7 @@ footer h1 {
 }
 
 footer h1:hover {
-  color: black;
+  color: rgb(82, 81, 81);
   transition: 0.5s;
   font-size: 285px;
 }
@@ -423,12 +431,14 @@ font-family: 'Ysabeau', sans-serif;
 .btn-dropdown {
   width: 300px;
   padding-left: 20px;
+
 }
 
 .styled-dropdown {
   padding: 10px;
   border-radius: 4px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 hr {
@@ -446,6 +456,7 @@ hr {
   font-size: 28px;
   padding-bottom: 20px;
   display: flex;
+  cursor: pointer;
 }
 
 .contact {
@@ -472,3 +483,35 @@ hr {
   transition: 1s;
   padding: 10px;
 }
+
+/* FINISH MAIN - CONTACTO */
+
+/* MAIN - ABOUT */
+
+.main-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-about p {
+  display: flex;
+  justify-content: center;
+  padding: 65px;
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+font-family: 'Ysabeau', sans-serif;
+}
+
+.main-about video {
+  height: 450px;
+  border-radius: 10px;
+}
+
+.video-player {
+  border: 3px solid #000000; 
+  border-radius: 10px; 
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
