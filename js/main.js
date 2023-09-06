@@ -7,7 +7,7 @@ document.getElementById("form-group").addEventListener("submit", function(event)
     let password = document.getElementById("password").value;
 
     if (username !== "" && password !== "") {
-        window.location.href = "./pages/producto.html";  
+        window.location.href = "../pages/producto.html";  
     } else {
         alert("Por favor, complete todos los campos del formulario.");
     }
