@@ -35,7 +35,7 @@ document.getElementById("user-form").addEventListener("submit", function (event)
 
     localStorage.setItem('usuario', JSON.stringify(usuario))
     Formulario.enviarFormulario(this, function () {
-        window.open("../pages/login.html", "_self");
+        window.open("./pages/login.html", "_self");
         Formulario.limpiarFormulario(this);
     });
 });
